@@ -1,5 +1,5 @@
 # Aplikacje-mobilne-Android
-#LAB3:
+##LAB3:
 Klasa: MainActivity
 	Klasa obsługująca główną aktywność. W układzie tej klasy znajdują się wszystkie elementy wymienione w zadaniu: switch, radio, checkbox, spinner, textview itd. W tej klasie znajdują się również metody do obsługi zdarzeń tych elementów:
 Metody:
@@ -12,7 +12,7 @@ Klasa: SecondActivity
 Metody:
 	onCreate(Bundle savedInstanceState) - metoda uruchomieniowa do której dodajemy widok naszego układu (a w nim szczegółowe informacje)
  
-LAB4:
+###LAB4:
 Klasa: MainActivity
 	Klasa obsługująca główną aktywność. W układzie tej klasy znajduję się element ListView, który wyświetla informacje w postaci listy oraz obsługuję zdarzenia związane z tymi informacjami, oraz został również dodany pasek narzędzi na którym znajduję się Menu które udostępnia nam możliwość podejrzenia informacji na temat aplikacji.
 Metody: 
@@ -26,7 +26,7 @@ Metody:
 Klasa:FabiaActivity, FeliciaActivity, OctaviaActivity
 	Klasy obsługujące aktywności trzeciego poziomu, w układach tych klas znajdują się informacje dotyczące poszczególnych samochodów.
  
-LAB5:
+####LAB5:
 Klasa: MainActivity
 	Klasa obsługująca główną aktywność. W momencie uruchomienia, wywoływany jest główny układ aktywności, który zawiera poszczególne fragmenty.
 Metody:
@@ -45,7 +45,7 @@ Klasa: TypeDetailFragment
 Metody:
 	onCreateView() - w tej metodzie, w jednym fragmencie umieszczamy drugi fragment (stoper).
  
-LAB6/7:
+#####LAB6/7:
 Klasa: CarDatabaseHelper
 	Klasa rozszerzającą SQLiteOpenHelper, służąca do obsługi bazy danych.
 Metody:
