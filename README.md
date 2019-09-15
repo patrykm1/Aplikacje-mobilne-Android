@@ -15,27 +15,21 @@ Klasa, której aktywność zostaje wywołana poprzez klasę MainActivity.
 #### Metody:
 *	onCreate(Bundle savedInstanceState) - metoda uruchomieniowa do której dodajemy widok naszego układu (a w nim szczegółowe informacje)
 
-### LAB4:
+## LAB4:
 
-#### Klasa: MainActivity
-*	 Klasa obsługująca główną aktywność. W układzie tej klasy znajduję się element ListView, który wyświetla informacje w postaci listy oraz obsługuję zdarzenia związane z tymi informacjami, oraz został również dodany pasek narzędzi na którym znajduję się Menu które udostępnia nam możliwość podejrzenia informacji na temat aplikacji.
+### Klasa: MainActivity
+Klasa obsługująca główną aktywność. W układzie tej klasy znajduję się element ListView, który wyświetla informacje w postaci listy oraz obsługuję zdarzenia związane z tymi informacjami, oraz został również dodany pasek narzędzi na którym znajduję się Menu które udostępnia nam możliwość podejrzenia informacji na temat aplikacji.
 #### Metody:
 * 	onItemClick() - jest to metoda nadpisana przez klasę AdapterView z której korzystamy do utworzenia obiektu nasłuchującego(reagującego na klikniecie elementu widoku). Po kliknięciu na element listy zostajemy przekierowani do następnego układu przypisanego do tego elementu.
 *	onCreateOptionsMenu() - metoda uruchomieniowa obsługująca układ Manu znajdującego się na pasku narzędzi.
 *	onOptionsItemSelected() - metoda obsługująca kliknięcie elementu w naszym Menu, w rezultacie czego zostaje włączony osobny układu z informacjami na temat aplikacji.
 
-
-
-Metody: 
-	onItemClick() - jest to metoda nadpisana przez klasę AdapterView z której korzystamy do utworzenia obiektu nasłuchującego(reagującego na klikniecie elementu widoku). Po kliknięciu na element listy zostajemy przekierowani do następnego układu przypisanego do tego elementu.
-	onCreateOptionsMenu() - metoda uruchomieniowa obsługująca układ Manu znajdującego się na pasku narzędzi.
-	onOptionsItemSelected() - metoda obsługująca kliknięcie elementu w naszym Menu, w rezultacie czego zostaje włączony osobny układu z informacjami na temat aplikacji.
-Klasa:SkodaAktivity
-	Klasa obsługująca aktywność drugo poziomową w której również znajduję się ListView.
-Metody:
-	onItemClick() - zasada działania jest taka sama jak w klasie MainActivity.
-Klasa:FabiaActivity, FeliciaActivity, OctaviaActivity
-	Klasy obsługujące aktywności trzeciego poziomu, w układach tych klas znajdują się informacje dotyczące poszczególnych samochodów.
+### Klasa: SkodaAktivity
+Klasa obsługująca aktywność drugo poziomową w której również znajduję się ListView.
+#### Metody:
+*	onItemClick() - zasada działania jest taka sama jak w klasie MainActivity.
+### Klasa:FabiaActivity, FeliciaActivity, OctaviaActivity
+Klasy obsługujące aktywności trzeciego poziomu, w układach tych klas znajdują się informacje dotyczące poszczególnych samochodów.
  
 ####LAB5:
 Klasa: MainActivity
