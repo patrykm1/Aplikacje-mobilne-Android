@@ -1,4 +1,13 @@
 # Aplikacje-mobilne-Android
+
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
+
+## General info
+This project is simple Lorem ipsum dolor generator.
+	
 ##LAB3:
 *Klasa: MainActivity
 	Klasa obsługująca główną aktywność. W układzie tej klasy znajdują się wszystkie elementy wymienione w zadaniu: switch, radio, checkbox, spinner, textview itd. W tej klasie znajdują się również metody do obsługi zdarzeń tych elementów:
