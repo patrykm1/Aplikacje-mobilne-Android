@@ -1,34 +1,31 @@
 # Aplikacje-mobilne-Android
 
-### LAB3:
+## LAB3:
 
-#### Klasa: MainActivity
-* Klasa obsługująca główną aktywność. W układzie tej klasy znajdują się wszystkie elementy wymienione w zadaniu: switch, radio, checkbox, spinner, textview itd. W tej klasie znajdują się również metody do obsługi zdarzeń tych elementów:
+### Klasa: MainActivity
+Klasa obsługująca główną aktywność. W układzie tej klasy znajdują się wszystkie elementy wymienione w zadaniu: switch, radio, checkbox, spinner, textview itd. W tej klasie znajdują się również metody do obsługi zdarzeń tych elementów:
 #### Metody:
 * 	onSwitchClicked(View view) - jako parametr przyjmuje obiekt klasy View (reprezentuje ona podstawowe komponenty interfejsu dla uzytkownika). Metoda ta wykrywa, czy stan elementu Switch został zmieniony. W zależności od stanu, wartość pola textview jest zmieniana.
 *	onCheckboxClicked(View view) - zasada działania jest bardzo podobna jak w w/w. metodzie. W zależności, który checkbox jest "aktywny", wyświetlany jest komunikat za pomocą metody makeText(this,text,duration) wywołanej na obiekcie klasy Toast. Ta metoda jako parametry przyjmuje tekst, który ma zostać wyświetlony oraz czas trwania wyświetlania komunikatu.
 *	onRadioButtonClicked(View view) - schemat działania jest taki jak wyżej. Elementy RadioButton grupowane są przy użyciu RadioGroup. Dzięki temu, tylko jeden element z danej grupy może być wybrany. W zależności, który element zostanie wybrany, za pomocą klasy Toast zostanie wyświetlony odpowiedni komunikat.
 *	onButtonClicked(View view) - metoda, która wykrywa kliknięcie na obrazku. Jeżeli tak się stanie, zostanie uruchomiona nowa aktywność (SecondActivity).
 
-## General info
-This project is simple Lorem ipsum dolor generator.
-	
+### Klasa: SecondActivity
+Klasa, której aktywność zostaje wywołana poprzez klasę MainActivity.
+#### Metody:
+*	onCreate(Bundle savedInstanceState) - metoda uruchomieniowa do której dodajemy widok naszego układu (a w nim szczegółowe informacje)
 
-*Klasa: MainActivity
-	Klasa obsługująca główną aktywność. W układzie tej klasy znajdują się wszystkie elementy wymienione w zadaniu: switch, radio, checkbox, spinner, textview itd. W tej klasie znajdują się również metody do obsługi zdarzeń tych elementów:
-*Metody:
-	onSwitchClicked(View view) - jako parametr przyjmuje obiekt klasy View (reprezentuje ona podstawowe komponenty interfejsu dla uzytkownika). Metoda ta wykrywa, czy stan elementu Switch został zmieniony. W zależności od stanu, wartość pola textview jest zmieniana.
-	onCheckboxClicked(View view) - zasada działania jest bardzo podobna jak w w/w. metodzie. W zależności, który checkbox jest "aktywny", wyświetlany jest komunikat za pomocą metody makeText(this,text,duration) wywołanej na obiekcie klasy Toast. Ta metoda jako parametry przyjmuje tekst, który ma zostać wyświetlony oraz czas trwania wyświetlania komunikatu.
-	onRadioButtonClicked(View view) - schemat działania jest taki jak wyżej. Elementy RadioButton grupowane są przy użyciu RadioGroup. Dzięki temu, tylko jeden element z danej grupy może być wybrany. W zależności, który element zostanie wybrany, za pomocą klasy Toast zostanie wyświetlony odpowiedni komunikat.
-	onButtonClicked(View view) - metoda, która wykrywa kliknięcie na obrazku. Jeżeli tak się stanie, zostanie uruchomiona nowa aktywność (SecondActivity).
-Klasa: SecondActivity
-	Klasa, której aktywność zostaje wywołana poprzez klasę MainActivity.
-Metody:
-	onCreate(Bundle savedInstanceState) - metoda uruchomieniowa do której dodajemy widok naszego układu (a w nim szczegółowe informacje)
- 
-###LAB4:
-Klasa: MainActivity
-	Klasa obsługująca główną aktywność. W układzie tej klasy znajduję się element ListView, który wyświetla informacje w postaci listy oraz obsługuję zdarzenia związane z tymi informacjami, oraz został również dodany pasek narzędzi na którym znajduję się Menu które udostępnia nam możliwość podejrzenia informacji na temat aplikacji.
+### LAB4:
+
+#### Klasa: MainActivity
+*	 Klasa obsługująca główną aktywność. W układzie tej klasy znajduję się element ListView, który wyświetla informacje w postaci listy oraz obsługuję zdarzenia związane z tymi informacjami, oraz został również dodany pasek narzędzi na którym znajduję się Menu które udostępnia nam możliwość podejrzenia informacji na temat aplikacji.
+#### Metody:
+* 	onItemClick() - jest to metoda nadpisana przez klasę AdapterView z której korzystamy do utworzenia obiektu nasłuchującego(reagującego na klikniecie elementu widoku). Po kliknięciu na element listy zostajemy przekierowani do następnego układu przypisanego do tego elementu.
+*	onCreateOptionsMenu() - metoda uruchomieniowa obsługująca układ Manu znajdującego się na pasku narzędzi.
+*	onOptionsItemSelected() - metoda obsługująca kliknięcie elementu w naszym Menu, w rezultacie czego zostaje włączony osobny układu z informacjami na temat aplikacji.
+
+
+
 Metody: 
 	onItemClick() - jest to metoda nadpisana przez klasę AdapterView z której korzystamy do utworzenia obiektu nasłuchującego(reagującego na klikniecie elementu widoku). Po kliknięciu na element listy zostajemy przekierowani do następnego układu przypisanego do tego elementu.
 	onCreateOptionsMenu() - metoda uruchomieniowa obsługująca układ Manu znajdującego się na pasku narzędzi.
