@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="CarOption">
+        <item>Skoda</item>
+        <item>Bmw</item>
+        <item>Audi</item>
+    </string-array>
+
+    <string-array name="skodaOption">
+        <item>Octavia</item>
+        <item>Fabia</item>
+        <item>Felicia</item>
+    </string-array>
+    <string name="title">Cars</string>
+    <string name="title_activity_skoda">SkodaActivity</string>
+    <string name="info">
+    App created for academy classes about cars
+    </string>
+    <string name="octavia_txt">
+        Information about Skoda Octavia
+    </string>
+    <string name="fabia_txt">
+        Information about Skoda Fabia
+    </string>
+    <string name="felicia_txt">
+        Information about Skoda Felicia
+    </string>
+</resources>

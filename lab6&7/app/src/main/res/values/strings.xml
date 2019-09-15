@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Bazadanych</string>
+    <string-array name="options">
+        <item>Skoda</item>
+        <item>Ford</item>
+        <item>Renault</item>
+    </string-array>
+    <string name="title_activity_car_category">Skoda</string>
+    <string name="title_activity_car">Car details</string>
+    <string name="favourite">Your favourite cars</string>
+</resources>

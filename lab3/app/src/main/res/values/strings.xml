@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="On">Switch wlaczony</string>
+    <string name="Off">Switch wylaczony</string>
+    <string name="checkbox1">First Option</string>
+    <string name="checkbox2">Second Option</string>
+    <string name="radio1">RadioButton1</string>
+    <string name="radio2">RadioButton2</string>
+    <string-array name="spinner1">
+        <item>SKODA</item>
+        <item>AUDI</item>
+        <item>BMW</item>
+        <item>FORD</item>
+        <item>OPEL</item>
+        <item>RENAULT</item>
+    </string-array>
+    <string name="Skoda">
+        czeskie przedsiębiorstwo motoryzacyjne produkujące samochody osobowe założone w 1895 roku.
+        Od 1991 roku należy do Grupy Volkswagena.
+    </string>
+</resources>
