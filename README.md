@@ -31,44 +31,44 @@ Klasa obsługująca aktywność drugo poziomową w której również znajduję s
 ### Klasa:FabiaActivity, FeliciaActivity, OctaviaActivity
 Klasy obsługujące aktywności trzeciego poziomu, w układach tych klas znajdują się informacje dotyczące poszczególnych samochodów.
  
-####LAB5:
-Klasa: MainActivity
-	Klasa obsługująca główną aktywność. W momencie uruchomienia, wywoływany jest główny układ aktywności, który zawiera poszczególne fragmenty.
-Metody:
-	onCreate() - metoda uruchomieniowa. W niej ustawiany jest układ aktywności.
-	itemClicked(int id) - metoda, która wykrywa kliknięty fragment. Następnie tworzony jest obiekt klasy TypeDetailFragment, który wykorzystany jest do rozpoczęcia transakcji za pomocą klasy FragmentTransaction.
-Klasa: StopwatchFragment
-	Klasa wykorzystująca aktywność do wyświetlania stoperu.
-Metody:
-	onCreate() - metoda uruchomieniowa. Dodatkowo zawiera flagi sprawdzające, czy stoper jest lub był uruchomiony.
-	onCreateView() - metoda, która w zależności od klikniętego przycisku (który wykrywany jest w metodzie onClick()), uruchamia odpowiednią metodę (onClickStart,onClickStop,onClickReset))
-	runTimer() - metoda służąca do wyświetlania czasu oraz do cyklicznego zwiększania go.
-Klasa: Type
-	Klasa opisująca nasze fragmenty. Zawiera pola, stała tablicę, konstruktor oraz getter i setter do pól.
-Klasa: TypeDetailFragment
-	Dzięki tej klasie, wyświetlane są informacje utworzone w klasie Type.
-Metody:
-	onCreateView() - w tej metodzie, w jednym fragmencie umieszczamy drugi fragment (stoper).
+## LAB5:
+### Klasa: MainActivity
+Klasa obsługująca główną aktywność. W momencie uruchomienia, wywoływany jest główny układ aktywności, który zawiera poszczególne fragmenty.
+#### Metody:
+*	onCreate() - metoda uruchomieniowa. W niej ustawiany jest układ aktywności.
+*	itemClicked(int id) - metoda, która wykrywa kliknięty fragment. Następnie tworzony jest obiekt klasy TypeDetailFragment, który wykorzystany jest do rozpoczęcia transakcji za pomocą klasy FragmentTransaction.
+### Klasa: StopwatchFragment
+Klasa wykorzystująca aktywność do wyświetlania stoperu.
+#### Metody:
+*	onCreate() - metoda uruchomieniowa. Dodatkowo zawiera flagi sprawdzające, czy stoper jest lub był uruchomiony.
+*	onCreateView() - metoda, która w zależności od klikniętego przycisku (który wykrywany jest w metodzie onClick()), uruchamia odpowiednią metodę (onClickStart,onClickStop,onClickReset))
+*	runTimer() - metoda służąca do wyświetlania czasu oraz do cyklicznego zwiększania go.
+### Klasa: Type
+Klasa opisująca nasze fragmenty. Zawiera pola, stała tablicę, konstruktor oraz getter i setter do pól.
+### Klasa: TypeDetailFragment
+Dzięki tej klasie, wyświetlane są informacje utworzone w klasie Type.
+#### Metody:
+*	onCreateView() - w tej metodzie, w jednym fragmencie umieszczamy drugi fragment (stoper).
  
-#####LAB6/7:
-Klasa: CarDatabaseHelper
-	Klasa rozszerzającą SQLiteOpenHelper, służąca do obsługi bazy danych.
-Metody:
-	onCreate() - metoda wywoływana w momencie, gdy baza tworzona jest po raz pierwszy na urządzeniu.
-	onUpgrade() - wywoływana w momencie, gdy trzeba zaktualizować bazę danych.
-	updateMyDatabase() - metoda, która sprawdza obecną wersję bazy danych. Jeżeli wersja jest mniejsza od 1 (czyli w ogólnie nie istnieje), to struktura bazy danych jest tworzona. W przeciwnym razie, struktura bazy danych jest upgradeowana. 
-	insertCar() - metoda, która umożliwia dodawanie elementów do bazy.
-Klasa: CarActivity
-	Klasa służąca do pobierania szczegółowych elementów bazy danych.
-Metody: 
-	onCreate() - pobiera identyfikator wybranego elementu a następnie jego szczegółowe informacje. Metoda udostępnia również możliwość dodania elementu do ulubionych.
-	onFavoriteClicked() - po kliknięciu na element, który znajduje się w sekcji ulubione, przenosi nas do wybranego elementu.
-	onPreExecute() - klasa służąca do wprowadzenia asynchroniczności. Tutaj umieszczane są elementy, które mają wykonać się przed rozpoczęciem zadania. Aby móc korzystać z asynchroniczności, należy posłużyć się klasąAsyncTask<>.
-	doInBackground() - w tej metodzie umieszczony jest kod, który ma się wykonywać w tle.
-	onProgressUpdate() - metoda sprawdzająca progres wykonywanych prac
-	onPostExecute() - kod, który ma zostać wykonany po zakończeniu zadania
-Klasa: TopLevelActivity
-	Klasa służąca do wyświetlania elementów, które zostały dodane do sekcji ulubione. W momencie, gdy zostanie kliknięty element, zostanie uruchomiona aktywność CarActivity.
+## LAB6/7:
+### Klasa: CarDatabaseHelper
+Klasa rozszerzającą SQLiteOpenHelper, służąca do obsługi bazy danych.
+#### Metody:
+*	onCreate() - metoda wywoływana w momencie, gdy baza tworzona jest po raz pierwszy na urządzeniu.
+*	onUpgrade() - wywoływana w momencie, gdy trzeba zaktualizować bazę danych.
+*	updateMyDatabase() - metoda, która sprawdza obecną wersję bazy danych. Jeżeli wersja jest mniejsza od 1 (czyli w ogólnie nie istnieje), to struktura bazy danych jest tworzona. W przeciwnym razie, struktura bazy danych jest upgradeowana. 
+*	insertCar() - metoda, która umożliwia dodawanie elementów do bazy.
+### Klasa: CarActivity
+Klasa służąca do pobierania szczegółowych elementów bazy danych.
+#### Metody: 
+*	onCreate() - pobiera identyfikator wybranego elementu a następnie jego szczegółowe informacje. Metoda udostępnia również możliwość dodania elementu do ulubionych.
+*	onFavoriteClicked() - po kliknięciu na element, który znajduje się w sekcji ulubione, przenosi nas do wybranego elementu.
+*	onPreExecute() - klasa służąca do wprowadzenia asynchroniczności. Tutaj umieszczane są elementy, które mają wykonać się przed rozpoczęciem zadania. Aby móc korzystać z asynchroniczności, należy posłużyć się klasąAsyncTask<>.
+*	doInBackground() - w tej metodzie umieszczony jest kod, który ma się wykonywać w tle.
+*	onProgressUpdate() - metoda sprawdzająca progres wykonywanych prac
+*	onPostExecute() - kod, który ma zostać wykonany po zakończeniu zadania
+### Klasa: TopLevelActivity
+Klasa służąca do wyświetlania elementów, które zostały dodane do sekcji ulubione. W momencie, gdy zostanie kliknięty element, zostanie uruchomiona aktywność CarActivity.
 
 
 
